@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>hello world</h1>
+  <script>
+    //Demonstrates the difference between var, let and const
+    function letvarconst() {
+      console.log("letvarconst");
+      let x = 1;
+      if (x == 1) {
+        var y = 2;
+        let z = 3;
+      }
+      console.log(y);
+      try {
+        console.log(z);
+      } catch (e) {
+        console.log(`Error: ${e.message}`);
+      }
+
+      const a = 4;
+      try {
+        a = 5;
+      } catch (e) {
+        console.log(`Error: ${e.message}`);
+      }
+    }
+  </script>
+  <noscript>Your browser does not support JavaScript!</noscript>
+</body>
