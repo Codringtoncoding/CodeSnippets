@@ -39,3 +39,23 @@ person1.dob = 1297;
 person.firstname = "alex";
 person.displayType();
 person.getAge();
+
+
+welcome = (name) => {
+  return `hello ${name};`
+}
+
+
+personObject = { name: 'steve'};
+
+
+welcomeObject = (person) => {
+
+    person.welcome = 'gello'
+    return `${person.name} ${person.welcome}`
+
+}
+
+
+
+console.log(welcomeObject(personObject))
