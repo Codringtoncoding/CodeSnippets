@@ -56,6 +56,6 @@ welcomeObject = (person) => {
 
 }
 
-
-
 console.log(welcomeObject(personObject))
+
+

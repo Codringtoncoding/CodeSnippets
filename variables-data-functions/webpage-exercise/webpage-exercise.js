@@ -7,9 +7,9 @@ function buttonClick() {
   }
 
   if (isNaN(inputValue)) {
-      const newString = inputValue.slice(0,3)
+    const newString = inputValue.slice(0, 3);
 
-      return alert(newString)
+    return alert(newString);
   }
 
   if (inputValue == typeof number);

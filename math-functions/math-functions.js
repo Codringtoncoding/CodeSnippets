@@ -1,0 +1,14 @@
+random
+Math.random()
+round
+Math.round(12.34)
+abs
+Math.abs(-56)
+floor/ceiling
+Math.floor(1.3)
+min/max
+Math.min(3,2,5)
+pow
+Math.pow(5,2)
+sqrt
+Math.sqrt(25)
