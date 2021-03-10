@@ -5,7 +5,7 @@ person = {
   country_of_origin: "",
   displayType: function () {
     // Method which will display type of Animal
-    console.log(this.firstname);
+    // console.log(this.firstname);
   },
   getAge: function () {
     const currentDate = new Date();
@@ -24,21 +24,24 @@ person1.firstname = "james";
 person1.dob = 1998;
 
 person.displayType();
-console.log(person.getAge());
+// console.log(person.getAge());
 
 var person2 = Object.create(person);
 person.firstname = "Fishes";
 person1.dob = 1197;
+console.log(person2.firstname)
 
-person.displayType();
-person.getAge();
+
+// person.displayType();
+// person.getAge();
 
 var person3 = Object.create(person);
 person1.dob = 1297;
+console.log(person3)
 
-person.firstname = "alex";
-person.displayType();
-person.getAge();
+// person.firstname = "alex";
+// person.displayType();
+// person.getAge();
 
 
 welcome = (name) => {
@@ -56,6 +59,6 @@ welcomeObject = (person) => {
 
 }
 
-console.log(welcomeObject(personObject))
+// console.log(welcomeObject(personObject))
 
 

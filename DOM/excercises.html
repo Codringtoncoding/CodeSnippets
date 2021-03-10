@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hello</title>
+  </head>
+
+  <body>
+    <p id="window"></p>
+    <div
+      style="
+        background-color: red;
+        position: relative;
+        background-color: red;
+        height: 100px;
+        width: 100px;
+      "
+    ></div>
+    <h1 id="demo"></h1>
+    <p id="pizza"></p>
+    <p id="testText">hello</p>
+
+    <input type="text" id="fname" name="fname" value="" />
+    <button onclick="catName()">Try it</button>
+    <script>
+      const testText = document.getElementById("testText");
+      testText.addEventListener(
+        "mouseover",
+        function (event) {
+          // highlight the mouseover target
+          event.target.style.color = "orange";
+
+          // reset the color after a short delay
+          setTimeout(function () {
+            event.target.style.color = "";
+          }, 500);
+        },
+        false
+      );
+      function catName() {
+        var x = document.getElementById("fname").value;
+        document.getElementById("pizza").innerHTML = x;
+      }
+      document.getElementById("window").innerHTML = window.innerWidth;
+
+      function catText() {
+        sum = "alive";
+        document.getElementById("demo").innerHTML = sum;
+      }
+      window.onload = catText;
+
+      const userInput = document.getElementById("fname").value;
+    </script>
+  </body>
+</html>

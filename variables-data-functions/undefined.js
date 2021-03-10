@@ -133,3 +133,11 @@ function multiply(a, b) {
 // use default values for insignificant function parameters
 // verify the properties existence or fill the unsafe objects with default properties
 // avoid the usage of sparse arrays
+
+5 > 4 → true
+"apple" > "pineapple" → false
+"2" > "12" → true
+undefined == null → true
+undefined === null → false
+null == "\n0\n" → false
+null === +"\n0\n" → false
