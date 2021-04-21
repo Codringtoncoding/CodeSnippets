@@ -106,3 +106,21 @@ export const App = () => {
 
 //use memo means it doesn't calulate object everythime
 
+export const StyledTickWrapper = styled('div')(({ theme: {} }) => {
+    return css`
+        display: flex;
+    `;
+});
+
+<StyledTickWrapper>
+<TickNormalMedium />
+<ReasonToJoin>{saveFavouritesText}</ReasonToJoin>
+</StyledTickWrapper>
+<StyledTickWrapper>
+<TickNormalMedium />
+<ReasonToJoin>{setupAlertsText}</ReasonToJoin>
+</StyledTickWrapper>
+<StyledTickWrapper>
+<TickNormalMedium />
+<ReasonToJoin>{guidesText}</ReasonToJoin>
+</StyledTickWrapper>
